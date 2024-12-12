@@ -1,0 +1,27 @@
+
+Ž	java:S112í"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¿¬†åº2J$71c76425-5ce1-492c-9f65-765d72d0e320
+ 	java:S135""YReduce the total number of break and continue statements in this loop to use at most one.(×Ù¼ìûÿÿÿÿ8À¬†åº2J$adb3d6bb-e6ec-43dd-a8d4-2c74a0840a65
+ 	java:S135a"YReduce the total number of break and continue statements in this loop to use at most one.(×Ù¼ìûÿÿÿÿ8À¬†åº2J$a41c9a48-d67f-49cc-afea-80814cb8edf8
+–	java:S116
+"TRename this field "DIMENSION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÄÉ¹8Ë­†åº2J$619d3305-a9a2-45ba-8c93-0c09aca67751
+ 	java:S116"YRename this field "NOMBRE_ARCHIVO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä—ˆçþÿÿÿÿ8Ë­†åº2J$643d8c9b-1a1c-4af9-aef8-c28defffa090
+•
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ÒËÍÙ8Í­†åº2J$6d7f6cd9-e5df-4417-b577-f9617c2c3d44
+~	java:S125J"<This block of commented-out lines of code should be removed.(Ÿø«À8ÔÛáåº2J$cbace9c8-2d45-4617-9be8-292882df3e9a
+•
+java:S3776N"RRefactor this method to reduce its Cognitive Complexity from 55 to the 15 allowed.(˜ „¦8Ï­†åº2J$2464d103-ac0f-4f1f-9b8d-e61c2f2a1ba2
+ˆ
+java:S1659m"EDeclare "calculo2" and all following declarations on a separate line.(¡Ç³š8Ï­†åº2J$c5e85881-a0fb-43dc-a582-81e9b5defaf8
+	java:S125¶"<This block of commented-out lines of code should be removed.(Ÿø«À8×Ûáåº2J$95f18e72-84b9-40ff-b6c1-6b9cef7c1055
+›
+java:S3776º"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ï´Ý¥øÿÿÿÿ8Ð­†åº2J$cde2b946-f69b-430b-86a4-8a45df635c15
+s	java:S106Ó"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ8Ñ­†åº2J$88a1c34d-aab4-4982-9d4e-b324d6cae90b
+s	java:S106Ô"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ8Ò­†åº2J$0b84c458-b95e-45d7-89d6-2e63a3ed03f6
+s	java:S106×"+Replace this use of System.out by a logger.(ò†åùÿÿÿÿ8Ò­†åº2J$075c6fbc-75b8-4b72-bbb5-038845d39be3
+s	java:S106Ù"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ8Ò­†åº2J$8e2c229b-c0b3-439a-8fc3-91211599a8c4
+s	java:S106Û"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ8Ò­†åº2J$0c3eb5dc-839b-4552-b2a9-350d3a5880b2
+s	java:S106Ü"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ8Ò­†åº2J$cad5b92b-52f4-4c1e-ad34-1db3ee7350ef
+w
+java:S1144Ò".Remove this unused private "printMapa" method.(¾Î€¹üÿÿÿÿ8ÚÛáåº2J$2a0dda5f-ede8-41ef-8c0e-18e7ac18232e
+‰
+java:S6541N"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 83 to 64, Complexity from 27 to 14, Nesting Level from 5 to 2, Number of Variables from 24 to 6.(˜ „¦8Ô­†åº2J$dd1a3c3d-ef97-4ff6-85f2-e1c1fe1e801c

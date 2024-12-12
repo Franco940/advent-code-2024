@@ -1,0 +1,5 @@
+
+	java:S112I"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ºâ¼ò¹2J$7b4323cd-b420-4bce-937c-ede8e531cb16
+§	java:S116"`Rename this field "CANTIDAD_LINEAS_INPUT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óì¹æÿÿÿÿÿ8‡ÅÆò¹2J$7e5a9f10-824b-4300-b419-982029ecc15c
+i
+java:S1170"!Make this final field static too.(Óì¹æÿÿÿÿÿ8ˆÅÆò¹2J$5af4863a-6dc8-4c6d-aba2-555abf626068
