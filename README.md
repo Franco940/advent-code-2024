@@ -15,4 +15,6 @@ Bienvenido a mi repositorio de soluciones para el **Advent of Code 2024**!
 | Día 7 | [https://adventofcode.com/2024/day/7](https://adventofcode.com/2024/day/7) | ✅       | ✅       |
 | Día 8 | [https://adventofcode.com/2024/day/8](https://adventofcode.com/2024/day/8) | ✅       | ✅       |
 
-**Nota:** Después del día 8, mi cerebro no explotó… 💥
+**Nota:** Después del día 8, mi cerebro explotó… 💥
+
+**Disclaimer:** Los inputs utilizados en este repositorio son personales y específicos para mi cuenta. Para obtener los tuyos, debes iniciar sesión en la página de [Advent of Code](https://adventofcode.com) y acceder a los problemas directamente desde allí.
