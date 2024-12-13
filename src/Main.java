@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println("\n##### - Advent of Code 2024 - #####");
 
         Day1Solution diaUno = new Day1Solution("inputs/dia1.txt");
         System.out.println("--> SOLUCION DIA 1 PARTE 1: " + diaUno.resolverParte1() + " <-- OK");
@@ -49,5 +49,10 @@ public class Main {
         System.out.println("--> SOLUCION DIA 8 PARTE 2: " + diaOcho.resolverParte2() + " <-- OK");
 
         System.out.println("===============================================================");
+
+        Day9Solution diaNueve = new Day9Solution("inputs/dia9.txt");
+        System.out.println("--> SOLUCION DIA 9 PARTE 1: " + diaNueve.resolverParte1() + " <-- OK");
+
+        //System.out.println("===============================================================");
     }
 }
