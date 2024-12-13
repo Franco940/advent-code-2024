@@ -1,7 +1,0 @@
-
-Ž	java:S112Ä"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ü›¼´»2J$0116efff-7755-4b3e-9164-8ba3921cfd4f
- 	java:S135S"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆžÿÿÿÿÿ8Ü›¼´»2J$99110b8d-200e-4ce6-aaf3-93594f089edd
-š
-java:S3776N"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(¡éÃþúÿÿÿÿ8²œ¼´»2J$aa6ded3e-565c-4f76-a189-52f16f685725
-€
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8±ÖÈ´»2J$54bd5aa2-2f4b-437e-893e-da127c699af8
