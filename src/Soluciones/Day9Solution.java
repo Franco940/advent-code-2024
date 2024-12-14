@@ -84,6 +84,8 @@ public class Day9Solution {
                     }
 
                     for(Integer posABorrar : indicesDePuntoABorrar) {
+                        // Al ser un objeto, java en la linea 68 le pasa la referencia de memoria de esta lista
+                        // Por ende, se actualiza en el origen de donde viene, el objeto de la linea 64
                         posicionesPuntos.remove(posABorrar);
                     }
 
