@@ -14,7 +14,7 @@ Bienvenido a mi repositorio de soluciones para el **Advent of Code 2024**!
 | Día 6 | [https://adventofcode.com/2024/day/6](https://adventofcode.com/2024/day/6) | ✅       | ❌       |
 | Día 7 | [https://adventofcode.com/2024/day/7](https://adventofcode.com/2024/day/7) | ✅       | ✅       |
 | Día 8 | [https://adventofcode.com/2024/day/8](https://adventofcode.com/2024/day/8) | ✅       | ✅       |
-| Día 9 | [https://adventofcode.com/2024/day/9](https://adventofcode.com/2024/day/9) | ✅       | ❌       |
+| Día 9 | [https://adventofcode.com/2024/day/9](https://adventofcode.com/2024/day/9) | ✅       | ✅       |
 
 
 

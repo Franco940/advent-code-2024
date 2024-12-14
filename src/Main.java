@@ -1,3 +1,5 @@
+import Soluciones.*;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("\n##### - Advent of Code 2024 - #####");
@@ -52,7 +54,8 @@ public class Main {
 
         Day9Solution diaNueve = new Day9Solution("inputs/dia9.txt");
         System.out.println("--> SOLUCION DIA 9 PARTE 1: " + diaNueve.resolverParte1() + " <-- OK");
+        System.out.println("--> SOLUCION DIA 9 PARTE 2: " + diaNueve.resolverParte2() + " <-- OK");
 
-        //System.out.println("===============================================================");
+        System.out.println("===============================================================");
     }
 }
