@@ -22,32 +22,49 @@ public class Day9Solution {
     }
 
     public long resolverParte1(){
-        List<String> secuenciaEnArray = calcularSecuenciaInicial(false);
+        this.archivos = new ArrayList<>();
+        this.puntos = new ArrayList<>();
+        List<String> secuenciaEnArray = calcularSecuenciaInicial();
 
-        // Se ordena como dice el enunciado de la parte 1
-        for(int i = secuenciaEnArray.size() - 1; i >= 0; i--) {
-            String numero = secuenciaEnArray.get(i);
-            if(numero.equals(".")){
-                continue;
-            }
+        for(int i = this.archivos.size() - 1; i >= 0; i--){
+            for(int j = 0; j < this.puntos.size() - 1 && j < i; j++){
+                Archivo secuenciaDePuntos = this.puntos.get(j);
+                Archivo archivo = this.archivos.get(i);
 
-            while(true) {
-                int indicePunto = 0;
+                List<Integer> posicionesPuntos = secuenciaDePuntos.posiciones;
+                List<Integer> posicionesId = archivo.posiciones;
 
-                for(int j = 0; j < i + 1; j++){
-                    if(secuenciaEnArray.get(j).equals(".")){
-                        indicePunto = j;
-                        break;
+                List<Integer> indicesDePuntoABorrar = new ArrayList<>();
+
+                if(posicionesPuntos == null){
+                    continue;
+                }
+                int idMovidos = 0;
+
+                for(Integer posPunto : posicionesPuntos){
+                    if(archivo.cantidad > 0) {
+                        secuenciaEnArray.set(posPunto, String.valueOf(archivo.id));
+                        archivo.cantidad--;
+                        secuenciaDePuntos.cantidad--;
+                        idMovidos++;
+                        indicesDePuntoABorrar.add(posPunto);
                     }
                 }
 
-                if(indicePunto == 0 ){
-                    break;
+                for(Integer posABorrar : indicesDePuntoABorrar) {
+                    // Al ser un objeto, java en la linea 68 le pasa la referencia de memoria de esta lista
+                    // Por ende, se actualiza en el origen de donde viene, el objeto de la linea 64
+                    posicionesPuntos.remove(posABorrar);
                 }
 
-                secuenciaEnArray.set(indicePunto, numero);
-                secuenciaEnArray.set(i, ".");
-                break;
+                for (int k = 0; k < idMovidos; k++) {
+                    secuenciaEnArray.set(posicionesId.getLast(), ".");
+                    posicionesId.removeLast();
+                }
+
+                if(archivo.cantidad == 0){
+                    break;
+                }
             }
         }
 
@@ -57,7 +74,7 @@ public class Day9Solution {
     public long resolverParte2(){
         this.archivos = new ArrayList<>();
         this.puntos = new ArrayList<>();
-        List<String> secuenciaEnArray = calcularSecuenciaInicial(true);
+        List<String> secuenciaEnArray = calcularSecuenciaInicial();
 
         for(int i = this.archivos.size() - 1; i >= 0; i--){
             for(int j = 0; j < this.puntos.size() - 1 && j < i; j++){
@@ -89,9 +106,6 @@ public class Day9Solution {
                         posicionesPuntos.remove(posABorrar);
                     }
 
-                    // Actualizo la informacion de las listas
-                    this.puntos.set(j, secuenciaDePuntos);
-                    this.archivos.set(i, archivo);
                     break;
                 }
             }
@@ -100,7 +114,7 @@ public class Day9Solution {
         return checkSum(secuenciaEnArray, true);
     }
 
-    private List<String> calcularSecuenciaInicial(boolean parteDOs){
+    private List<String> calcularSecuenciaInicial(){
         List<String> secuencia = new ArrayList<>();
         int idArchivo = 0;
         int idPunto = 0;
@@ -113,32 +127,29 @@ public class Day9Solution {
             for(int j = 0; j < a && esUnArchivo; j++){
                 secuencia.add(String.valueOf(idArchivo));
 
-                if(parteDOs){
-                    // Guardo la cantidad y las posiciones de cada ID de archivo para la parte 2
-                    if(archivo.id == null) archivo.id = idArchivo;
+                // Guardo la cantidad y las posiciones de cada ID de archivo para la parte 2
+                if(archivo.id == null) archivo.id = idArchivo;
 
-                    if(archivo.posiciones == null) archivo.posiciones = new ArrayList<>();
-                    archivo.posiciones.add(secuencia.size() - 1);
+                if(archivo.posiciones == null) archivo.posiciones = new ArrayList<>();
+                archivo.posiciones.add(secuencia.size() - 1);
 
-                    archivo.cantidad++;
-                }
+                archivo.cantidad++;
             }
-            if(parteDOs && archivo.id != null) this.archivos.add(archivo);
+            if(esUnArchivo) this.archivos.add(archivo);
 
             for(int k = 0; k < a && !esUnArchivo; k++){
                 secuencia.add(".");
 
-                if(parteDOs){
-                    // Guardo la cantidad y las posiciones de cada punto para la parte 2
-                    if(archivo.id == null) archivo.id = idPunto;
+                // Guardo la cantidad y las posiciones de cada punto para la parte 2
+                if(archivo.id == null) archivo.id = idPunto;
 
-                    if(archivo.posiciones == null) archivo.posiciones = new ArrayList<>();
-                    archivo.posiciones.add(secuencia.size() - 1);
+                if(archivo.posiciones == null) archivo.posiciones = new ArrayList<>();
 
-                    archivo.cantidad++;
-                }
+                archivo.posiciones.add(secuencia.size() - 1);
+
+                archivo.cantidad++;
             }
-            if(parteDOs && !esUnArchivo) this.puntos.add(archivo);
+            if(!esUnArchivo) this.puntos.add(archivo);
 
             if(esUnArchivo) {
                 idArchivo++;
