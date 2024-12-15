@@ -6,13 +6,13 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
-class Archivo {
-    Integer id;
-    Integer cantidad = 0;
-    List<Integer> posiciones;
-}
-
 public class Day9Solution {
+    private class Archivo {
+        Integer id;
+        Integer cantidad = 0;
+        List<Integer> posiciones;
+    }
+
     private String discoInput;
     private List<Archivo> archivos;
     private List<Archivo> puntos;
