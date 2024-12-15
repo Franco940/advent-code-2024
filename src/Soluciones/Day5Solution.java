@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Day5Solution {
     private Map<Integer, List<Integer>> reglasDeOrden;
