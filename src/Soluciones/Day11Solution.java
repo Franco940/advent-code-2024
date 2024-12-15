@@ -24,6 +24,7 @@ public class Day11Solution {
     }
 
     public long resolverParte2(){
+        secuenciaDePiedrasEnMap = new HashMap<>();
         leerInput(input);
         return procesarPiedras(75);
     }
