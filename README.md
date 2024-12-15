@@ -1,6 +1,6 @@
-# 🎄 Advent of Code 2024
+# 🎄 ❄️ Advent of Code 2024 ❄️ 🎄
 
-Bienvenido a mi repositorio de soluciones para el **Advent of Code 2024**!
+Bienvenido a mi repositorio de soluciones para el **Advent of Code 2024**! 🎅
 
 ## 📅 Progreso
 
@@ -16,6 +16,7 @@ Bienvenido a mi repositorio de soluciones para el **Advent of Code 2024**!
 | [Día 8](https://github.com/Franco940/advent-code-2024/blob/main/src/Soluciones/Day8Solution.java)   | [https://adventofcode.com/2024/day/8](https://adventofcode.com/2024/day/8)   | ✅       | ✅      |
 | [Día 9](https://github.com/Franco940/advent-code-2024/blob/main/src/Soluciones/Day9Solution.java)   | [https://adventofcode.com/2024/day/9](https://adventofcode.com/2024/day/9)   | ✅       | ✅      |
 | [Día 10](https://github.com/Franco940/advent-code-2024/blob/main/src/Soluciones/Day10Solution.java) | [https://adventofcode.com/2024/day/10](https://adventofcode.com/2024/day/10) | ✅       | ✅       |
+| [Día 11](https://github.com/Franco940/advent-code-2024/blob/main/src/Soluciones/Day11Solution.java) | [https://adventofcode.com/2024/day/11](https://adventofcode.com/2024/day/11) | ✅       | ✅       |
 
 
 

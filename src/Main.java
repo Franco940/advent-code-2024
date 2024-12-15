@@ -63,5 +63,11 @@ public class Main {
         System.out.println("--> SOLUCION DIA 10 PARTE 2: " + diaDiez.resolverParte2() + " <-- OK");
 
         System.out.println("===============================================================");
+
+        Day11Solution diaOnce = new Day11Solution("inputs/dia11.txt");
+        System.out.println("--> SOLUCION DIA 11 PARTE 1: " + diaOnce.resolverParte1() + " <-- OK");
+        System.out.println("--> SOLUCION DIA 11 PARTE 2: " + diaOnce.resolverParte2() + " <-- OK");
+
+        System.out.println("===============================================================");
     }
 }
